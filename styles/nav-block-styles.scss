@@ -1,0 +1,68 @@
+/*----------------
+	Buttons
+-----------------*/
+button {
+	border: none;
+	cursor: pointer;
+}
+nav {
+	font-size: 1rem;
+	margin: 0 auto;
+	padding: 5% 0 10%;
+}
+#locateBtn, #unitBtn {
+	background: none;
+	border: 1px solid rgba(255,255,255,0.25);
+	border-radius: 50%;
+	color: #fff;
+	height: 40px;
+	transition: background 1s ease-in-out, border 0.2s ease-in-out;
+	width: 40px;
+}
+#locateBtn.on, #unitBtn.on {
+	background: rgba(255,255,255,0.25);
+}
+#locateBtn:focus, #locateBtn:hover, #unitBtn:focus, #unitBtn:hover {
+	border: 1px solid rgba(255,255,255,0.75);
+}
+#locateBtn {
+	margin-right: 10px;
+}
+#unitBtn {
+	font-weight: 300;
+	padding-right: 3px;
+	padding-top: 2px;
+	text-transform: uppercase;
+}
+#unitBtn:before {
+	content: '\00b0'; /* Degree symbol */
+	padding: 1px;
+}
+@keyframes pulse {
+	20% { background: rgba(255,255,255,0.25); }
+}
+
+
+/*----------------
+	Media Queries
+-----------------*/
+
+@media (min-width: 375px) {
+	nav {
+		left: 5%;
+		position: absolute;
+		top: 10%;
+	}
+	#locateBtn, #unitBtn {
+		display: block;
+		margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 550px) {
+    nav { top: 8%; }
+}
+
+@media (min-width: 880px) {
+    nav { top: 5%; }
+}
