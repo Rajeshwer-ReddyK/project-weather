@@ -1,0 +1,1 @@
+export const OPEN_WEATHER_API_TOKEN = "d4ca5f29a827218a6341dc7c16aa35f9";

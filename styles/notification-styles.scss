@@ -1,0 +1,39 @@
+#status {
+	background-color: #FFECAE;
+	color: rgba(0,0,0,0.5);
+	font-size: 1rem;
+	width: 100%;
+	z-index: 100;
+}
+#status p {
+	display: inline-block;
+	padding: 10px 40px 6px;
+}
+#status a {
+	color: #fff;
+}
+#status .close {
+	background: none;
+	color: rgba(0,0,0,0.5);
+	float: right;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+}
+/*** Error & Success Messages ***/
+#status.error {
+	background-color: #EE9797;
+}
+#status.success {
+	background-color: #82C886;
+}
+#status.error, #status.error .close,
+#status.success, #status.success .close {
+	color: #fff;
+}
+#status.error .fa-exclamation-triangle,
+#status.success .fa-check-circle {
+	margin-right: 10px;
+}
